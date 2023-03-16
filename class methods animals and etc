@@ -1,0 +1,42 @@
+namespace ConsoleApp12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee employee = new Employee();
+            employee.Name = "Tom";
+            Console.WriteLine(employee.Name);
+
+            Employee[] employees = new Employee[2];
+            Employee firstEmployee = new Employee()
+            {
+                Name = "Tim",
+                Department = "Developers",
+            };
+            employees[0] = firstEmployee;
+
+
+        }
+    }
+}
+public class Employee
+{ 
+    {
+        public string Name { get; set; }
+    public string Position { get; set; }
+    public int ID { get; set; }
+    public string Department { get; set; }
+
+    public void PrintInfo()
+    {
+        Console.WriteLine(Name);
+        Console.WriteLine(Position);
+        Console.WriteLine(ID);
+        Console.WriteLine(Department);
+    }
+
+
+}
+
+
